@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/commont.css">
+	<link rel="stylesheet" href="css/phone.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/iconfont2.css">
+	<link rel="stylesheet" href="css/iconfont3.css">
+	<link rel="stylesheet" href="css/iconfont4.css">
+	<link rel="stylesheet" href="css/iconfont5.css">
+	
+	<link rel="stylesheet" href="css/iconfontt.css">
+    <link rel="stylesheet" type="text/css" href="css/pad.css" media="(min-width:768px)">
+	<link rel="stylesheet" href="css/pc.css" media="(min-width:992px)">
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-1.3.2.min.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+<title>百度地图API自定义地图</title>
+<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word;}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+		
+	<nav class="navbar navbar-default " role="navigation">
+        <div class="container-fluid"> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navber_le clearfix">
+                	<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                	<h3>Red Horse <span>Media</span></h3>
+                </div>
+
+                <div class="collapse navbar-collapse gWidth" id="example-navbar-collapse">
+	                <ul class="nav navbar-nav">
+	                    <li data-toggle="arrowdown" id="arrow1" class="user-name">
+	                    	<p><a href="index.html" class="run-up aaa" >首页</a></p>
+	                    </li>
+	                    <li data-toggle="arrowdown" id="arrow2" class="user-name"><!-- <a href="#">关于我们</a> -->
+							<p>
+		                        <a href="about.html" class="aaa">关于我们</a>
+		                       <!--  <span class=" phone_show pc_hide iconfont icon-sanjiaoxing" id="arro2"></span> -->
+                      		</p> 
+	                    </li>
+	                    <!-- <ul id="xiala2" class="phone_show pc_hide xiala">
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      	</ul>      -->
+	                    <li data-toggle="arrowdown" id="arrow3" class="user-name">
+	                    	<p>
+		                        <a href="yxfw.html"  class="aaa">影像服务</a>
+		                        <!-- <span class=" phone_show pc_hide iconfont icon-sanjiaoxing" id="arro3"></span> -->
+                      		</p>
+                      	</li>
+                      	 <!-- <ul id="xiala3" class="phone_show pc_hide xiala">
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      	</ul>    -->
+
+                      	<li data-toggle="arrowdown" id="arrow4" class="user-name">
+							<p>
+		                        <a href="case.html" class="aaa">案例展示</a>
+		                       <!--  <span class=" phone_show pc_hide iconfont icon-sanjiaoxing" id="arro4"></span> -->
+                      		</p> 
+	                    </li>
+	                     <!-- <ul id="xiala4" class="phone_show pc_hide xiala">
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      	</ul>    -->
+	                    <li data-toggle="arrowdown" id="arrow5" class="user-name">
+							<p>
+		                        <a href="news.html" class="aaa">新闻动态</a>
+		                        <!-- <span class=" phone_show pc_hide iconfont icon-sanjiaoxing" id="arro5"></span> -->
+                      		</p> 
+	                    </li>
+	                     <!-- <ul id="xiala5" class="phone_show pc_hide xiala">
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      	</ul>  -->  
+	                    <li data-toggle="arrowdown" id="arrow6" class="user-name">
+							<p>
+		                        <a href="lxwm.html"  class="aaa">联系我们</a>
+		                        <!-- <span class=" phone_show pc_hide iconfont icon-sanjiaoxing" id="arro6"></span> -->
+                      		</p> 
+	                    </li>
+	                     <!-- <ul id="xiala6" class="phone_show pc_hide xiala">
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      			<li><a href="#">收藏的宝贝</a></li>
+                      	</ul>    -->
+	                    
+	                </ul>
+				<!-- hidden-box -->
+	                <!-- <div class="phone_hide pc_show">
+	                	
+	                	<div data-toggle="hidden-box" id="nav-box2" class="get-box">
+	                    <ul class="height">
+	                        <li><a href="#">收藏的宝贝</a></li>
+	                        <li><a href="#">收藏的宝贝</a></li>
+	                    </ul>
+		                </div>
+		                <div data-toggle="hidden-box" id="nav-box3" class="center-box">
+		                    <ul class="height">
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                    </ul>
+		                </div>
+		                <div data-toggle="hidden-box" id="nav-box4" class="shopping-box">
+		                    <ul class="height">
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                    </ul>
+		                </div>
+		                <div data-toggle="hidden-box" id="nav-box5" class="nav-box">
+		                    <ul class="height">
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                    </ul>
+		                </div>
+		                <div data-toggle="hidden-box" id="nav-box6" class="msg-box">
+		                    <ul class="height">
+		                        <li><a href="#">收藏的宝贝</a></li>
+		                    </ul>
+		                </div> -->
+	                </div>
+            	</div>
+            </div>
+            
+            <div class="icon">
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+                <span class="s4"></span>
+            </div>
+        </div>
+    </nav>
+<!-- 联系我们 -->
+
+<div class="banner_y">
+		<img src="images/banner_project.jpg" alt="">
+	</div>
+ <!-- 联系 -->
+ <div class="lianxi">
+ 	<div class="gWidth">
+ 		<div class="lianxi_top">
+ 			<h3>联系我们</h3>
+ 			<p>CONTACT US</p>
+ 		</div>
+ 		<div class="lianxi_bottom clearfix">
+ 			<div class="lianxi_l" style="border:#ccc solid 1px;" id="dituContent">	
+ 			</div>
+ 			<div class="lianxi_r">
+ 				<p><span class="iconfont icon-dizhi phone_hide pc_show"></span>地址：北京市东燕郊开发区迎宾北路创业大厦A1211</p>
+ 				<p><span class="iconfont icon-youbian phone_hide pc_show"></span>邮编：0154848</p>
+ 				<p><span class="iconfont icon-dianhua phone_hide pc_show"></span>电话：1520148845</p>
+ 				<p><span class="iconfont icon-tubiaozhizuomoban phone_hide pc_show"></span>传真：5412020</p>
+ 				<p><span class="iconfont icon-youxiang phone_hide pc_show"></span>邮箱：15864120.5619685210</p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+
+    	<div class="foot2">
+  <p class="foot-link"><a href="" >关于我们</a><b>|</b><a href="" >网站建设</a><b>|</b><a href="" >推广优化</a><b>|</b><a href="" >企业邮箱</a><b>|</b><a href="" >域名注册</a><b>|</b><a href="" >虚拟主机</a><b>|</b><a href=""  onclick="traker.traceCount('xinnet.com','110','a336');">案例展示</a><b>|</b><a href="">新闻资讯</a><b>|</b><a href="" >联系我们</a></p>
+  <div class="foot-word">
+    <p>地址：这是地址地址这是地址地址这是地址地址这是地址地址   电话：这是电话<br>
+     
+	  <a href="#">备案号备案号备案号备案号备案号备案号备案号备案号</a><br>
+    版权版权版权<span></span></p>
+  </div>
+</div>
+
+
+
+
+
+		<script src="js/show.js"></script>
+	<script src="js/phone.js" media="(max-width:992px)"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.821142,39.971878);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"北京红驹文化传媒有限公司",content:"北京市东燕郊开发区迎宾北路创业大厦A1211",point:"116.82094|39.971968",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon(" http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
